@@ -2,7 +2,7 @@ class Agenda:
     def __init__(self) -> None:
         self.__pessoas = [None]*10
 
-    def armazenar_pessoa(self, pessoa) -> None:
+    def armazenar_pessoa(self, pessoa: str) -> None:
         for i in range(10):
             if self.__pessoas[i] is None:
                 self.__pessoas[i] = pessoa

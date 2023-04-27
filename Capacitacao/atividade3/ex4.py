@@ -46,11 +46,3 @@ class ControleRemoto:
     def consultar_canal(self) -> int:
         return self.televisao.canal
 
-tv = Televisao()
-controle = ControleRemoto(tv)
-
-controle.aumentar_volume() 
-controle.aumentar_canal() 
-controle.trocar_canal(5) 
-print(controle.consultar_volume()) 
-print(controle.consultar_canal())
